@@ -7,14 +7,15 @@ on:
 jobs:
   fetch_and_upload:
     runs-on: ubuntu-latest
-    environment: prod
+    env:
+      config: prod
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Fetch JSON from URL
         run: |
           mkdir -p data
-          curl -L ${{ env.JSON_ENDPOINT }}?data=type1 > data/data1.json
+          curl -L ${{ env.config.JSON_ENDPOINT }}?data=type1 > data/data1.json
       - name: Diff file
         id: diff
         run: |
