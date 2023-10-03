@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
     steps:
-      - name: Fetch JSON from URL
-        run: curl -L ${{ env.JSON_ENDPOINT }}?data=type1 > data.json
       - name: Checkout
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
+      - name: Fetch JSON from URL
+        run: curl -L ${{ env.JSON_ENDPOINT }}?data=type1 > /data/data1.json
       - name: Diff file
         id: diff
         run: |
