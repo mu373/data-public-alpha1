@@ -1,0 +1,31 @@
+name: JSON updater
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+jobs:
+  fetch_and_upload:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: Fetch JSON from URL
+        run: curl -L ${{ env.JSON_ENDPOINT }}?data=type1 > data.json
+      - name: Checkout
+        uses: actions/checkout@4
+      - name: Diff file
+        id: diff
+        run: |
+          git add -N .
+          git diff --name-only --exit-code
+        continue-on-error: true
+      - name: Commit & Push
+        run: |
+          set -x
+          git checkout -b data
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit --author=. -m 'Update data'
+          git push
+        if: steps.diff.outcome == 'failure'
