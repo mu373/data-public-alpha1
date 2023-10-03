@@ -13,8 +13,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Fetch JSON from URL
         run: |
-        mkdir -p data
-        curl -L ${{ env.JSON_ENDPOINT }}?data=type1 > data/data1.json
+          mkdir -p data
+          curl -L ${{ env.JSON_ENDPOINT }}?data=type1 > data/data1.json
       - name: Diff file
         id: diff
         run: |
