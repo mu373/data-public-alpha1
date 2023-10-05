@@ -1,11 +1,11 @@
 # data-public-alpha1
 Automated JSON publishing on GitHub Pages (via GitHub Actions)
 
-## Branchs
-- `main`
-- `data`
+## Branches
+- [`main`](https://github.com/mu373/data-public-alpha1/tree/main)
+- [`data`](https://github.com/mu373/data-public-alpha1/tree/data)
   - where data is stored
-  - Connected to GitHub pages
+  - published to web directly through GitHub pages
 
 ## GitHub Actions Overview
 - Get JSON files from pre-specified URL
