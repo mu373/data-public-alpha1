@@ -1,6 +1,12 @@
 # data-public-alpha1
 Automated JSON publishing on GitHub Pages (via GitHub Actions)
 
+## Branchs
+- `main`
+- `data`
+  - where data is stored
+  - Connected to GitHub pages
+
 ## GitHub Actions Overview
 - Get JSON files from pre-specified URL
 - Commit file to `data` branch if there is any changes
