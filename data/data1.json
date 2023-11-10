@@ -1,1 +1,61 @@
-<!DOCTYPE html><html><head><link rel="shortcut icon" href="//ssl.gstatic.com/docs/script/images/favicon.ico"><title>Error</title><style type="text/css" nonce="d6_cJlwYAGflMsxD_ZNvRQ">body {background-color: #fff; margin: 0; padding: 0;}.errorMessage {font-family: Arial,sans-serif; font-size: 12pt; font-weight: bold; line-height: 150%; padding-top: 25px;}</style></head><body style="margin:20px"><div><img alt="Google Apps Script" src="//ssl.gstatic.com/docs/script/images/logo.png"></div><div style="text-align:center;font-family:monospace;margin:50px auto 0;max-width:600px">TypeError: Cannot read properties of undefined (reading &#39;sheetName&#39;) (line 35, file &quot;Code&quot;)</div></body></html>
+{
+  "meta": {
+    "name": "data name 1",
+    "description": "description goes here",
+    "link": "https://google.com"
+  },
+  "data": [
+    {
+      "date": "2023-10-03",
+      "count": 400
+    },
+    {
+      "date": "2023-10-04",
+      "count": 401
+    },
+    {
+      "date": "2023-10-05",
+      "count": 402
+    },
+    {
+      "date": "2023-10-06",
+      "count": 403
+    },
+    {
+      "date": "2023-10-07",
+      "count": 404
+    },
+    {
+      "date": "2023-10-08",
+      "count": 405
+    },
+    {
+      "date": "2023-10-09",
+      "count": 406
+    },
+    {
+      "date": "2023-10-10",
+      "count": 407
+    },
+    {
+      "date": "2023-10-11",
+      "count": 408
+    },
+    {
+      "date": "2023-10-12",
+      "count": 409
+    },
+    {
+      "date": "2023-10-13",
+      "count": 500
+    },
+    {
+      "date": "2023-10-14",
+      "count": 510
+    },
+    {
+      "date": "2023-11-22",
+      "count": 123
+    }
+  ]
+}
