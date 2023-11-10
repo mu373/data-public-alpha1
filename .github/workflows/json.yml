@@ -17,6 +17,7 @@ jobs:
         run: |
           mkdir -p data
           curl -L ${{ vars.JSON_ENDPOINT }}?data=type1 > data/data1.json
+          curl -L ${{ vars.JSON_ENDPOINT }}?data=type2 > data/data2.json
       - name: Diff files
         id: diff
         run: |
